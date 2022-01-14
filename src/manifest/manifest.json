@@ -23,15 +23,25 @@
     "color": "icon-color.png"
   },
   "accentColor": "#D85028",
-  "configurableTabs": [],
-  "staticTabs": [{
-    "entityId": "1b4cdb0f-aa27-43c6-9239-eb6d66b51328",
-    "name": "LearnPersonalTab",
-    "contentUrl": "https://{{PUBLIC_HOSTNAME}}/learnPersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
-    "scopes": [
-      "personal"
-    ]
-  }],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://{{PUBLIC_HOSTNAME}}/configMathTab/config.html?name={loginHint}&tenant={tid}&group={groupId}&theme={theme}",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "staticTabs": [
+    {
+      "entityId": "1b4cdb0f-aa27-43c6-9239-eb6d66b51328",
+      "name": "LearnPersonalTab",
+      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/learnPersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
   "bots": [],
   "connectors": [],
   "composeExtensions": [],
