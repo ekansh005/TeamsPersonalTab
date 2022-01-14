@@ -1,6 +1,6 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.9/MicrosoftTeams.schema.json",
-  "manifestVersion": "1.9",
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.11",
   "id": "{{APPLICATION_ID}}",
   "version": "{{VERSION}}",
   "packageName": "{{PACKAGE_NAME}}",
@@ -12,11 +12,11 @@
   },
   "name": {
     "short": "Learn MSTeams Tab",
-    "full": "Learn MSTeams Tab"
+    "full": "Learn Personal Tab"
   },
   "description": {
-    "short": "TODO: add short description here",
-    "full": "TODO: add full description here"
+    "short": "Manage your TODOs within Teams",
+    "full": "TODO: add full description here (long)"
   },
   "icons": {
     "outline": "icon-outline.png",
@@ -24,16 +24,14 @@
   },
   "accentColor": "#D85028",
   "configurableTabs": [],
-  "staticTabs": [
-    {
-      "entityId": "1b4cdb0f-aa27-43c6-9239-eb6d66b51328",
-      "name": "LearnPersonalTab",
-      "contentUrl": "https://{{PUBLIC_HOSTNAME}}/learnPersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
-      "scopes": [
-        "personal"
-      ]
-    }
-  ],
+  "staticTabs": [{
+    "entityId": "1b4cdb0f-aa27-43c6-9239-eb6d66b51328",
+    "name": "LearnPersonalTab",
+    "contentUrl": "https://{{PUBLIC_HOSTNAME}}/learnPersonalTab/?name={loginHint}&tenant={tid}&theme={theme}",
+    "scopes": [
+      "personal"
+    ]
+  }],
   "bots": [],
   "connectors": [],
   "composeExtensions": [],
